@@ -42,23 +42,16 @@ Run the scripts in MATLAB:
 ---
 
 ## Workflow  
-Input (Joint Angles / Target Position)
-            │
-            ▼
-  ┌───────────────────────┐
-  │   Forward Kinematics  │ → End-Effector Position
-  └───────────────────────┘
-            │
-            ▼
-  ┌───────────────────────┐
-  │   Inverse Kinematics  │ → Joint Angles
-  └───────────────────────┘
-            │
-            ▼
-  ┌───────────────────────┐
-  │       Simulation      │ → Robot Motion Visualization
-  └───────────────────────┘
 
+```mermaid
+flowchart TD
+    A[Input: Joint Angles / Target Position] --> B[Forward Kinematics]
+    B --> C[End-Effector Position]
+    A --> D[Inverse Kinematics]
+    D --> E[Joint Angles]
+    C --> F[Simulation]
+    E --> F
+    F --> G[Robot Motion Visualization]
 
 ---
 
