@@ -45,23 +45,6 @@ Run the scripts in MATLAB:
 
 ![Workflow Diagram](workflow.png)
 
-Input (Joint Angles / Target Position)  
-            │  
-            ▼  
-  ┌───────────────────────┐  
-  │   Forward Kinematics  │ → End-Effector Position  
-  └───────────────────────┘  
-            │  
-            ▼  
-  ┌───────────────────────┐  
-  │   Inverse Kinematics  │ → Joint Angles  
-  └───────────────────────┘  
-            │  
-            ▼  
-  ┌───────────────────────┐  
-  │       Simulation      │ → Robot Motion Visualization  
-  └───────────────────────┘  
-
 ---
 
 ## References  
