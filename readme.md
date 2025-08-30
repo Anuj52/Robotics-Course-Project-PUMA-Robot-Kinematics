@@ -41,7 +41,9 @@ Run the scripts in MATLAB:
 
 ---
 
-## Workflow  
+## Workflow 
+
+![Workflow Diagram](workflow.png)
 
 Input (Joint Angles / Target Position)  
             │  
